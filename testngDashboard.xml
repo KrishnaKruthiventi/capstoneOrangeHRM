@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DashboardTestSuite">
+
+	<listeners>
+		<listener class-name="listeners.TestListener"></listener>
+		<listener class-name="listeners.ExtentReportListener"></listener>
+	</listeners>
+
+	<test name="DashboardTestMethods">
+		<classes>
+			<class name="tests.DashboardPageTest" />
+		</classes>
+	</test>
+</suite>

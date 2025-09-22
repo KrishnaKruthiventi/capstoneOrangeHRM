@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LeaveTestSuite">
+
+	<listeners>
+		<listener class-name="listeners.TestListener"></listener>
+		<listener class-name="listeners.ExtentReportListener"></listener>
+	</listeners>
+
+	<test name="LeavePageTests">
+		<groups>
+			<run>
+				<include name="applyLeave" />
+				<include name="myLeave" />
+				<include name="entitlements" />
+				<include name="leaveReports" />
+				<include name="assignLeave" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.LeavePageTest" />
+		</classes>
+	</test>
+
+</suite>

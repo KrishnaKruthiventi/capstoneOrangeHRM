@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AdminTestSuite">
+
+	<listeners>
+		<listener class-name="listeners.TestListener"></listener>
+		<listener class-name="listeners.ExtentReportListener"></listener>
+	</listeners>
+
+	<test name="AdminPageTests">
+		<parameter name="jobTitle" value="Sales" />
+		<parameter name="employmentStatus" value="Temporary" />
+
+		<classes>
+			<class name="tests.AdminPageTest" />
+		</classes>
+	</test>
+	
+</suite>

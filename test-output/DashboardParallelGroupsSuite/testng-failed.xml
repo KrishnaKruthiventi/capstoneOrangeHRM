@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [DashboardParallelGroupsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="MenuGroupTests(failed)">
+    <groups>
+      <run>
+        <include name="menu"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DashboardPageTest">
+        <methods>
+          <include name="getDashBoardItems"/>
+        </methods>
+      </class> <!-- tests.DashboardPageTest -->
+    </classes>
+  </test> <!-- MenuGroupTests(failed) -->
+  <test thread-count="4" parallel="tests" name="ScreenshotGroupTests(failed)">
+    <groups>
+      <run>
+        <include name="screenshot"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DashboardPageTest">
+        <methods>
+          <include name="getDashboardCustomization"/>
+        </methods>
+      </class> <!-- tests.DashboardPageTest -->
+    </classes>
+  </test> <!-- ScreenshotGroupTests(failed) -->
+  <test thread-count="4" parallel="tests" name="LeavesGroupTests(failed)">
+    <groups>
+      <run>
+        <include name="leaves"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.DashboardPageTest">
+        <methods>
+          <include name="checkPendingLeaves"/>
+        </methods>
+      </class> <!-- tests.DashboardPageTest -->
+    </classes>
+  </test> <!-- LeavesGroupTests(failed) -->
+</suite> <!-- Failed suite [DashboardParallelGroupsSuite] -->

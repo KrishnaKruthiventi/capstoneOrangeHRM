@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="MenuGroupTests(failed)">
+    <classes>
+      <class name="tests.DashboardPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getQuickLaunchWidgets"/>
+          <include name="testPrintPieChart"/>
+          <include name="initialSetup"/>
+          <include name="seeTheMenu"/>
+        </methods>
+      </class> <!-- tests.DashboardPageTest -->
+    </classes>
+  </test> <!-- MenuGroupTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
