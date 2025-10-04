@@ -21,7 +21,7 @@ public class DriverManager {
 			
 			switch(browser) {
 			
-			case "chrome":
+			case "chrome": // For chrome browser
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.addArguments("--disable-notifications");
@@ -30,7 +30,7 @@ public class DriverManager {
 				driver.set(webDriver);
 				break;
 				
-			case "firefox":
+			case "firefox": // For firefox browser
 				WebDriverManager.firefoxdriver().setup();
 				FirefoxOptions firefoxOptions = new FirefoxOptions();
 				firefoxOptions.addArguments("--disable-notifications");
@@ -39,7 +39,7 @@ public class DriverManager {
 				driver.set(webDriver);
 				break;
 				
-			case "edge":
+			case "edge": // For edge browser
 				WebDriverManager.edgedriver().setup();
 				EdgeOptions edgeOptions = new EdgeOptions();
 				edgeOptions.addArguments("--disable-notifications");
