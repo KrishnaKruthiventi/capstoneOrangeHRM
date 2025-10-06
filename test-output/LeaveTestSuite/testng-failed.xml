@@ -3,6 +3,7 @@
 <suite name="Failed suite [LeaveTestSuite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.TestListener"/>
+    <listener class-name="listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="LeavePageTests(failed)">
     <groups>
@@ -18,7 +19,6 @@
       <class name="tests.LeavePageTest">
         <methods>
           <include name="assignLeaveTest"/>
-          <include name="getMyLeaveEntitlementsAndUsageReport"/>
           <include name="initialSetup"/>
           <include name="tearDown"/>
           <include name="myEntitlementsTest"/>

@@ -21,20 +21,4 @@
       </class> <!-- tests.PIMPageTest -->
     </classes>
   </test> <!-- EmployeeSearchGroupTests(failed) -->
-  <test thread-count="2" parallel="tests" name="AddAndDeleteEmployeeGroupTests(failed)">
-    <groups>
-      <run>
-        <include name="addAndDeleteEmployee"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="tests.PIMPageTest">
-        <methods>
-          <include name="addAndDeleteEmployeeFunctionality"/>
-          <include name="initialSetup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- tests.PIMPageTest -->
-    </classes>
-  </test> <!-- AddAndDeleteEmployeeGroupTests(failed) -->
 </suite> <!-- Failed suite [PIMTestSuite] -->

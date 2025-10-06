@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-04T15:56:00 IST" name="PIMTestSuite" finished-at="2025-10-04T15:56:28 IST" duration-ms="28056">
+  <suite started-at="2025-10-06T16:38:02 IST" name="PIMTestSuite" finished-at="2025-10-06T16:38:21 IST" duration-ms="18410">
     <groups>
       <group name="addAndDeleteEmployee">
         <method signature="PIMPageTest.addAndDeleteEmployeeFunctionality()[pri:0, instance:tests.PIMPageTest@55787112]" name="addAndDeleteEmployeeFunctionality" class="tests.PIMPageTest"/>
@@ -11,33 +11,33 @@
         <method signature="PIMPageTest.verifyEmployeeSearch()[pri:0, instance:tests.PIMPageTest@119f1f2a]" name="verifyEmployeeSearch" class="tests.PIMPageTest"/>
       </group> <!-- employeeSearch -->
     </groups>
-    <test started-at="2025-10-04T15:56:00 IST" name="EmployeeSearchGroupTests" finished-at="2025-10-04T15:56:21 IST" duration-ms="21026">
+    <test started-at="2025-10-06T16:38:02 IST" name="EmployeeSearchGroupTests" finished-at="2025-10-06T16:38:16 IST" duration-ms="13744">
       <class name="tests.PIMPageTest">
-        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-04T15:56:01 IST" name="initialSetup" finished-at="2025-10-04T15:56:12 IST" duration-ms="11319" status="PASS">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-06T16:38:02 IST" name="initialSetup" finished-at="2025-10-06T16:38:09 IST" duration-ms="6171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="verifyEmployeeSearch()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-04T15:56:12 IST" name="verifyEmployeeSearch" finished-at="2025-10-04T15:56:20 IST" duration-ms="8098" status="PASS">
+        <test-method signature="verifyEmployeeSearch()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-06T16:38:09 IST" name="verifyEmployeeSearch" finished-at="2025-10-06T16:38:16 IST" duration-ms="6961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-04T15:56:21 IST" name="tearDown" finished-at="2025-10-04T15:56:21 IST" duration-ms="897" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMPageTest@119f1f2a]" started-at="2025-10-06T16:38:16 IST" name="tearDown" finished-at="2025-10-06T16:38:16 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.PIMPageTest -->
     </test> <!-- EmployeeSearchGroupTests -->
-    <test started-at="2025-10-04T15:56:00 IST" name="AddAndDeleteEmployeeGroupTests" finished-at="2025-10-04T15:56:28 IST" duration-ms="28055">
+    <test started-at="2025-10-06T16:38:02 IST" name="AddAndDeleteEmployeeGroupTests" finished-at="2025-10-06T16:38:21 IST" duration-ms="18410">
       <class name="tests.PIMPageTest">
-        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-04T15:56:01 IST" name="initialSetup" finished-at="2025-10-04T15:56:13 IST" duration-ms="12637" status="PASS">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-06T16:38:02 IST" name="initialSetup" finished-at="2025-10-06T16:38:08 IST" duration-ms="6028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="addAndDeleteEmployeeFunctionality()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-04T15:56:13 IST" name="addAndDeleteEmployeeFunctionality" finished-at="2025-10-04T15:56:28 IST" duration-ms="15029" status="PASS">
+        <test-method signature="addAndDeleteEmployeeFunctionality()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-06T16:38:08 IST" name="addAndDeleteEmployeeFunctionality" finished-at="2025-10-06T16:38:21 IST" duration-ms="12140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAndDeleteEmployeeFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-04T15:56:28 IST" name="tearDown" finished-at="2025-10-04T15:56:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PIMPageTest@55787112]" started-at="2025-10-06T16:38:21 IST" name="tearDown" finished-at="2025-10-06T16:38:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

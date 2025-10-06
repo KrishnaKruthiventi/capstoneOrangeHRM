@@ -3,6 +3,7 @@
 <suite name="Failed suite [AdminTestSuite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.TestListener"/>
+    <listener class-name="listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="AdminPageTests(failed)">
     <parameter name="jobTitle" value="Sales"/>
@@ -10,9 +11,9 @@
     <classes>
       <class name="tests.AdminPageTest">
         <methods>
-          <include name="checkEmployementStatus"/>
           <include name="tearDown"/>
           <include name="initialSetup"/>
+          <include name="removeUser"/>
         </methods>
       </class> <!-- tests.AdminPageTest -->
     </classes>

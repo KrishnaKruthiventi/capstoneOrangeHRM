@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AdminPageTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 22 20:03:59 IST 2025</td>
+<td>Started on:</td><td>Mon Oct 06 16:29:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127053 ms)</td>
+<tr><td>Total time:</td><td>151 seconds (151409 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,125 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.AdminPageTest.removeUser()'><b>removeUser</b><br>Test class: tests.AdminPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//button[@type=&apos;button&apos;])[7]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
+	at pages.BasePage.click(BasePage.java:22)
+	at pages.AdminPage.removeUser(AdminPage.java:131)
+	at tests.AdminPageTest.removeUser(AdminPageTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@type=&apos;button&apos;])[7]&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb91fe1d5d3ea715898051696b579104, findElement {using=xpath, value=(//button[@type=&apos;button&apos;])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52229/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb91fe1d5d3ea715898051696b579104
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692264801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692264801'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//button[@type=&apos;button&apos;])[7]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
+	at pages.BasePage.click(BasePage.java:22)
+	at pages.AdminPage.removeUser(AdminPage.java:131)
+	at tests.AdminPageTest.removeUser(AdminPageTest.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@type=&apos;button&apos;])[7]&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb91fe1d5d3ea715898051696b579104, findElement {using=xpath, value=(//button[@type=&apos;button&apos;])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52229/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb91fe1d5d3ea715898051696b579104
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+</pre></div></td>
+<td>44</td>
+<td>tests.AdminPageTest@305f031</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,60 +195,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.AdminPageTest.checkEmployementStatus()'><b>checkEmployementStatus</b><br>Test class: tests.AdminPageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.getOrganizationStructure()'><b>getOrganizationStructure</b><br>Test class: tests.AdminPageTest</td>
-<td></td>
-<td>13</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.checkJobTitles()'><b>checkJobTitles</b><br>Test class: tests.AdminPageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.checkPayGrades()'><b>checkPayGrades</b><br>Test class: tests.AdminPageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.addAndRemovePayGrade()'><b>addAndRemovePayGrade</b><br>Test class: tests.AdminPageTest<br>Parameters: Grade 6</td>
-<td></td>
-<td>12</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
 <td title='tests.AdminPageTest.addAndRemovePayGrade()'><b>addAndRemovePayGrade</b><br>Test class: tests.AdminPageTest<br>Parameters: Grade 7</td>
 <td></td>
 <td>12</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.addAndRemoveEmployementStatus()'><b>addAndRemoveEmployementStatus</b><br>Test class: tests.AdminPageTest<br>Parameters: Temporary</td>
-<td></td>
-<td>14</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
-<tr>
-<td title='tests.AdminPageTest.removeUser()'><b>removeUser</b><br>Test class: tests.AdminPageTest</td>
-<td></td>
-<td>17</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
+<td>tests.AdminPageTest@305f031</td></tr>
 <tr>
 <td title='tests.AdminPageTest.addAndRemovePayGrade()'><b>addAndRemovePayGrade</b><br>Test class: tests.AdminPageTest<br>Parameters: Grade 8</td>
 <td></td>
 <td>12</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.checkJobTitles()'><b>checkJobTitles</b><br>Test class: tests.AdminPageTest</td>
+<td></td>
+<td>3</td>
+<td>tests.AdminPageTest@305f031</td></tr>
 <tr>
 <td title='tests.AdminPageTest.addAndRemoveJobTitle()'><b>addAndRemoveJobTitle</b><br>Test class: tests.AdminPageTest<br>Parameters: Sales</td>
 <td></td>
-<td>16</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
+<td>15</td>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.addAndRemoveEmployementStatus()'><b>addAndRemoveEmployementStatus</b><br>Test class: tests.AdminPageTest<br>Parameters: Temporary</td>
+<td></td>
+<td>14</td>
+<td>tests.AdminPageTest@305f031</td></tr>
 <tr>
 <td title='tests.AdminPageTest.addUserFunctionality()'><b>addUserFunctionality</b><br>Test class: tests.AdminPageTest</td>
 <td></td>
 <td>9</td>
-<td>tests.AdminPageTest@4648ce9</td></tr>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.checkPayGrades()'><b>checkPayGrades</b><br>Test class: tests.AdminPageTest</td>
+<td></td>
+<td>3</td>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.getOrganizationStructure()'><b>getOrganizationStructure</b><br>Test class: tests.AdminPageTest</td>
+<td></td>
+<td>13</td>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.addAndRemovePayGrade()'><b>addAndRemovePayGrade</b><br>Test class: tests.AdminPageTest<br>Parameters: Grade 6</td>
+<td></td>
+<td>12</td>
+<td>tests.AdminPageTest@305f031</td></tr>
+<tr>
+<td title='tests.AdminPageTest.checkEmployementStatus()'><b>checkEmployementStatus</b><br>Test class: tests.AdminPageTest</td>
+<td></td>
+<td>3</td>
+<td>tests.AdminPageTest@305f031</td></tr>
 </table><p>
 </body>
 </html>
