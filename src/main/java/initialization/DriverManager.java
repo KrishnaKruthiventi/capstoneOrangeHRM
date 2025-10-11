@@ -7,6 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -17,7 +18,7 @@ public class DriverManager {
 	
 	public static WebDriver getDriver() {
 		if(driver.get() == null) {
-			String browser = ConfigManager.getBrowser(0,0);
+			String browser = ConfigManager.getBrowser(2,0);
 			
 			switch(browser) {
 			
@@ -32,10 +33,13 @@ public class DriverManager {
 				
 			case "firefox": // For firefox browser
 				WebDriverManager.firefoxdriver().setup();
+				FirefoxProfile profile = new FirefoxProfile();
+				profile.setPreference("dom.webnotifications.enabled", false);
 				FirefoxOptions firefoxOptions = new FirefoxOptions();
-				firefoxOptions.addArguments("--disable-notifications");
-				firefoxOptions.addArguments("--start-maximized");
+				firefoxOptions.setProfile(profile);
 				webDriver = new FirefoxDriver(firefoxOptions);
+//				firefoxOptions.addArguments("--start-maximized");
+				webDriver.manage().window().maximize();
 				driver.set(webDriver);
 				break;
 				

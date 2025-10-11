@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [PIMTestSuite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [LoginTestSuite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.TestListener"/>
     <listener class-name="listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="EmployeeSearchGroupTests(failed)">
-    <groups>
-      <run>
-        <include name="employeeSearch"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="LoginTestMethods(failed)">
     <classes>
-      <class name="tests.PIMPageTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="verifyEmployeeSearch"/>
-          <include name="initialSetup"/>
+          <include name="testLoginPage"/>
           <include name="tearDown"/>
+          <include name="initialSetup"/>
         </methods>
-      </class> <!-- tests.PIMPageTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- EmployeeSearchGroupTests(failed) -->
-</suite> <!-- Failed suite [PIMTestSuite] -->
+  </test> <!-- LoginTestMethods(failed) -->
+</suite> <!-- Failed suite [LoginTestSuite] -->
