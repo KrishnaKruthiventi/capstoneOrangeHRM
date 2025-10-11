@@ -18,7 +18,7 @@ public class DriverManager {
 	
 	public static WebDriver getDriver() {
 		if(driver.get() == null) {
-			String browser = ConfigManager.getBrowser(2,0);
+			String browser = ConfigManager.getBrowser(0,0);
 			
 			switch(browser) {
 			
@@ -40,15 +40,6 @@ public class DriverManager {
 				webDriver = new FirefoxDriver(firefoxOptions);
 //				firefoxOptions.addArguments("--start-maximized");
 				webDriver.manage().window().maximize();
-				driver.set(webDriver);
-				break;
-				
-			case "edge": // For edge browser
-				WebDriverManager.edgedriver().setup();
-				EdgeOptions edgeOptions = new EdgeOptions();
-				edgeOptions.addArguments("--disable-notifications");
-				edgeOptions.addArguments("--start-maximized");
-				webDriver = new EdgeDriver(edgeOptions);
 				driver.set(webDriver);
 				break;
 				

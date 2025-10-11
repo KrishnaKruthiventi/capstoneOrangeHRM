@@ -34,7 +34,7 @@ public class LoginTest {
 		String userName;
 		String passWord;
 		
-		String userNeed = "correct";
+		String userNeed = "logout";
 		
 		switch (userNeed) {
 		case "correct": // Verify successful login with valid credentials
@@ -46,13 +46,13 @@ public class LoginTest {
 		
 		case "incorrectUserName": // Verify login with invalid username
 			userName = ConfigManager.getProperty("invalid.username1");
-			passWord = ConfigManager.getProperty("valid.password");
+			passWord = ConfigManager.getValidPassword();
 			loginPage.invalidUsername(userName, passWord);
 			Assert.assertEquals(loginPage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 			break;
 			
 		case "incorrectPassword": // Verify login with invalid password
-			userName = ConfigManager.getProperty("valid.username");
+			userName = ConfigManager.getValidUsername();
 			passWord = ConfigManager.getProperty("invalid.password1");
 			loginPage.invalidPassword(userName, passWord);
 			Assert.assertEquals(loginPage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -66,8 +66,8 @@ public class LoginTest {
 			break;
 			
 		case "logout": // Verify logout functionality
-			userName = ConfigManager.getProperty("valid.username");
-			passWord = ConfigManager.getProperty("valid.password");
+			userName = ConfigManager.getValidUsername();
+			passWord = ConfigManager.getValidPassword();
 			loginPage.login(userName, passWord);
 			Assert.assertEquals(loginPage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 			loginPage.logout();

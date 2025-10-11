@@ -25,13 +25,12 @@ public class ConfigManager {
 		properties = new Properties();
 		try {
 			FileInputStream input = new FileInputStream(CONFIG_FILE);
+			excelData = ExcelUtil.loadExcelData(EXCEL_FILE_PATH, EXCEL_SHEET);
 			properties.load(input);
 			input.close();
 		} catch(Exception e) {
 			throw new RuntimeException("Failed to read config properties file");
 		}
-		
-		excelData = ExcelUtil.loadExcelData(EXCEL_FILE_PATH, EXCEL_SHEET);
 	}
 	
 	
