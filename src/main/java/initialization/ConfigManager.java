@@ -3,13 +3,6 @@ package initialization;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DateUtil;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import utilities.ExcelUtil;
 
 public class ConfigManager {
@@ -25,9 +18,9 @@ public class ConfigManager {
 		properties = new Properties();
 		try {
 			FileInputStream input = new FileInputStream(CONFIG_FILE);
-			excelData = ExcelUtil.loadExcelData(EXCEL_FILE_PATH, EXCEL_SHEET);
 			properties.load(input);
 			input.close();
+			excelData = ExcelUtil.loadExcelData(EXCEL_FILE_PATH, EXCEL_SHEET);
 		} catch(Exception e) {
 			throw new RuntimeException("Failed to read config properties file");
 		}
@@ -82,6 +75,4 @@ public class ConfigManager {
 	public static String getTimeUnit() {
 		return properties.getProperty("timeunit");
 	}
-	
-
 }

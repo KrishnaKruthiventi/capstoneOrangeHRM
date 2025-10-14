@@ -11,9 +11,17 @@
     <classes>
       <class name="tests.AdminPageTest">
         <methods>
+          <include name="checkEmployementStatus"/>
+          <include name="checkJobTitles"/>
+          <include name="getOrganizationStructure"/>
           <include name="tearDown"/>
+          <include name="addAndRemoveJobTitle"/>
+          <include name="addAndRemovePayGrade"/>
           <include name="initialSetup"/>
+          <include name="addAndRemoveEmployementStatus"/>
           <include name="removeUser"/>
+          <include name="checkPayGrades"/>
+          <include name="addUserFunctionality"/>
         </methods>
       </class> <!-- tests.AdminPageTest -->
     </classes>

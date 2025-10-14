@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LeavePageTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 06 16:33:40 IST 2025</td>
+<td>Started on:</td><td>Tue Oct 14 19:11:18 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>140 seconds (140560 ms)</td>
+<tr><td>Total time:</td><td>109 seconds (109101 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>entitlements leaveReports myLeave applyLeave assignLeave </td>
 </tr><tr>
@@ -76,134 +76,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LeavePageTest.myEntitlementsTest()'><b>myEntitlementsTest</b><br>Test class: tests.LeavePageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(), &apos;US - Personal&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
-	at pages.BasePage.click(BasePage.java:22)
-	at pages.LeavePage.checkMyEntitlements(LeavePage.java:164)
-	at tests.LeavePageTest.myEntitlementsTest(LeavePageTest.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(), &apos;US - Personal&apos;)]&quot;}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e73cd7c7d6f503fc1c61835fc6c2b44a, findElement {using=xpath, value=//span[contains(text(), &apos;US - Personal&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60480/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 30 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace645323114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace645323114'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(), &apos;US - Personal&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
-	at pages.BasePage.click(BasePage.java:22)
-	at pages.LeavePage.checkMyEntitlements(LeavePage.java:164)
-	at tests.LeavePageTest.myEntitlementsTest(LeavePageTest.java:67)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(), &apos;US - Personal&apos;)]&quot;}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e73cd7c7d6f503fc1c61835fc6c2b44a, findElement {using=xpath, value=//span[contains(text(), &apos;US - Personal&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60480/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 30 more
-</pre></div></td>
-<td>33</td>
-<td>tests.LeavePageTest@297ea53a</td></tr>
-<tr>
 <td title='tests.LeavePageTest.assignLeaveTest()'><b>assignLeaveTest</b><br>Test class: tests.LeavePageTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
+	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:32)
 	at pages.BasePage.click(BasePage.java:22)
 	at pages.LeavePage.assignLeave(LeavePage.java:178)
 	at tests.LeavePageTest.assignLeaveTest(LeavePageTest.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]&quot;}
-  (Session info: chrome=140.0.7339.208)
+  (Session info: chrome=141.0.7390.77)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e73cd7c7d6f503fc1c61835fc6c2b44a, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60480/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
+Command: [90d18a721a1af3dc403c25ab95d692e3, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62133/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90d18a721a1af3dc403c25ab95d692e3
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -225,11 +115,11 @@ Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 30 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2069545799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2069545799'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace786116491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace786116491'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:37)
+	at utilities.WaitUtils.waitForElementToBeClickable(WaitUtils.java:32)
 	at pages.BasePage.click(BasePage.java:22)
 	at pages.LeavePage.assignLeave(LeavePage.java:178)
 	at tests.LeavePageTest.assignLeaveTest(LeavePageTest.java:91)
@@ -260,14 +150,14 @@ Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]&quot;}
-  (Session info: chrome=140.0.7339.208)
+  (Session info: chrome=141.0.7390.77)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e73cd7c7d6f503fc1c61835fc6c2b44a, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60480/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
+Command: [90d18a721a1af3dc403c25ab95d692e3, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\kruthivk\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62133/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90d18a721a1af3dc403c25ab95d692e3
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -305,14 +195,24 @@ Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='tests.LeavePageTest.getMyLeaveEntitlementsAndUsageReport()'><b>getMyLeaveEntitlementsAndUsageReport</b><br>Test class: tests.LeavePageTest</td>
+<td></td>
+<td>9</td>
+<td>tests.LeavePageTest@297ea53a</td></tr>
+<tr>
+<td title='tests.LeavePageTest.myEntitlementsTest()'><b>myEntitlementsTest</b><br>Test class: tests.LeavePageTest</td>
+<td></td>
+<td>5</td>
+<td>tests.LeavePageTest@297ea53a</td></tr>
+<tr>
 <td title='tests.LeavePageTest.applyLeaveTest()'><b>applyLeaveTest</b><br>Test class: tests.LeavePageTest</td>
 <td></td>
 <td>7</td>
 <td>tests.LeavePageTest@297ea53a</td></tr>
 <tr>
-<td title='tests.LeavePageTest.myLeaveList()'><b>myLeaveList</b><br>Test class: tests.LeavePageTest</td>
+<td title='tests.LeavePageTest.getLeaveEntitlementsAndUsageReport()'><b>getLeaveEntitlementsAndUsageReport</b><br>Test class: tests.LeavePageTest</td>
 <td></td>
-<td>5</td>
+<td>11</td>
 <td>tests.LeavePageTest@297ea53a</td></tr>
 <tr>
 <td title='tests.LeavePageTest.employeeEntitlementsTest()'><b>employeeEntitlementsTest</b><br>Test class: tests.LeavePageTest</td>
@@ -320,19 +220,14 @@ Session ID: e73cd7c7d6f503fc1c61835fc6c2b44a
 <td>12</td>
 <td>tests.LeavePageTest@297ea53a</td></tr>
 <tr>
-<td title='tests.LeavePageTest.getLeaveEntitlementsAndUsageReport()'><b>getLeaveEntitlementsAndUsageReport</b><br>Test class: tests.LeavePageTest</td>
-<td></td>
-<td>12</td>
-<td>tests.LeavePageTest@297ea53a</td></tr>
-<tr>
-<td title='tests.LeavePageTest.getMyLeaveEntitlementsAndUsageReport()'><b>getMyLeaveEntitlementsAndUsageReport</b><br>Test class: tests.LeavePageTest</td>
-<td></td>
-<td>9</td>
-<td>tests.LeavePageTest@297ea53a</td></tr>
-<tr>
 <td title='tests.LeavePageTest.addEntitlementTest()'><b>addEntitlementTest</b><br>Test class: tests.LeavePageTest</td>
 <td></td>
-<td>16</td>
+<td>14</td>
+<td>tests.LeavePageTest@297ea53a</td></tr>
+<tr>
+<td title='tests.LeavePageTest.myLeaveList()'><b>myLeaveList</b><br>Test class: tests.LeavePageTest</td>
+<td></td>
+<td>5</td>
 <td>tests.LeavePageTest@297ea53a</td></tr>
 </table><p>
 </body>

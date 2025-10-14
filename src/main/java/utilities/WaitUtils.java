@@ -9,16 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import initialization.ConfigManager;
-import initialization.DriverManager;
 
 public class WaitUtils {
-	protected WebDriver driver;
+
 	protected static WebDriverWait wait;
-	
-	
-	public WaitUtils() {
-		driver = DriverManager.getDriver();
-	}
 	
 	public static void waitForElementToBeVisible(WebDriver driver, WebElement element) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigManager.getExplicitWait()));

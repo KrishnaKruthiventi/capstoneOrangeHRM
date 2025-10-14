@@ -34,14 +34,14 @@ public class LoginTest {
 		String userName;
 		String passWord;
 		
-		String userNeed = "logout";
+		String userNeed = "correct";
 		
 		switch (userNeed) {
 		case "correct": // Verify successful login with valid credentials
 			userName = ConfigManager.getValidUsername();
 			passWord = ConfigManager.getValidPassword();
 			loginPage.login(userName, passWord);
-//			Assert.assertEquals(loginPage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+			Assert.assertEquals(loginPage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 			break;
 		
 		case "incorrectUserName": // Verify login with invalid username

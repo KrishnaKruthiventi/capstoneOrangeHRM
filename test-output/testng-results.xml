@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-11T11:37:13 IST" name="Default suite" finished-at="2025-10-11T11:37:22 IST" duration-ms="8956">
+  <suite started-at="2025-10-14T23:57:42 IST" name="DashboardTestSuite" finished-at="2025-10-14T23:57:53 IST" duration-ms="11231">
     <groups>
     </groups>
-    <test started-at="2025-10-11T11:37:13 IST" name="Default test" finished-at="2025-10-11T11:37:22 IST" duration-ms="8956">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.LoginTest@3efe7086]" started-at="2025-10-11T11:37:13 IST" name="initialSetup" finished-at="2025-10-11T11:37:14 IST" duration-ms="1845" status="PASS">
+    <test started-at="2025-10-14T23:57:42 IST" name="DashboardTestMethods" finished-at="2025-10-14T23:57:53 IST" duration-ms="11231">
+      <class name="tests.DashboardPageTest">
+        <test-method is-config="true" signature="initialSetup()[pri:0, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:42 IST" name="initialSetup" finished-at="2025-10-14T23:57:49 IST" duration-ms="6592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="testLoginPage()[pri:0, instance:tests.LoginTest@3efe7086]" started-at="2025-10-11T11:37:14 IST" name="testLoginPage" finished-at="2025-10-11T11:37:21 IST" duration-ms="6712" status="PASS">
+        <test-method signature="seeTheMenu()[pri:1, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:49 IST" name="seeTheMenu" finished-at="2025-10-14T23:57:49 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3efe7086]" started-at="2025-10-11T11:37:21 IST" name="tearDown" finished-at="2025-10-11T11:37:21 IST" duration-ms="285" status="PASS">
+        </test-method> <!-- seeTheMenu -->
+        <test-method signature="getDashBoardItems()[pri:2, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:49 IST" name="getDashBoardItems" finished-at="2025-10-14T23:57:49 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDashBoardItems -->
+        <test-method signature="getQuickLaunchWidgets()[pri:3, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:49 IST" name="getQuickLaunchWidgets" finished-at="2025-10-14T23:57:50 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getQuickLaunchWidgets -->
+        <test-method signature="testPrintPieChart()[pri:4, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:50 IST" name="testPrintPieChart" finished-at="2025-10-14T23:57:50 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrintPieChart -->
+        <test-method signature="getDashboardCustomization()[pri:5, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:50 IST" name="getDashboardCustomization" finished-at="2025-10-14T23:57:50 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDashboardCustomization -->
+        <test-method signature="checkPendingLeaves()[pri:6, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:50 IST" name="checkPendingLeaves" finished-at="2025-10-14T23:57:53 IST" duration-ms="2363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPendingLeaves -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DashboardPageTest@6d0b5baf]" started-at="2025-10-14T23:57:53 IST" name="tearDown" finished-at="2025-10-14T23:57:53 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.DashboardPageTest -->
+    </test> <!-- DashboardTestMethods -->
+  </suite> <!-- DashboardTestSuite -->
 </testng-results>

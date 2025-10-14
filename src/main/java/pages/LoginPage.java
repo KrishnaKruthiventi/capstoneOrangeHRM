@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import initialization.ConfigManager;
 import utilities.LoggerUtil;
@@ -32,11 +31,6 @@ public class LoginPage extends BasePage{
 	
 	@FindBy(xpath = "//a[@href='/web/index.php/auth/logout']")
 	private WebElement logoutBtn; // logout button which appears after clicking dropdown
-	
-	public LoginPage() {
-		super();
-		PageFactory.initElements(driver, this);
-	}
 	
 	public String getTitle() {
 		return driver.getTitle();

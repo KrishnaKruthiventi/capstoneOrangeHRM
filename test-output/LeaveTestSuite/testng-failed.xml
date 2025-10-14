@@ -21,7 +21,6 @@
           <include name="assignLeaveTest"/>
           <include name="initialSetup"/>
           <include name="tearDown"/>
-          <include name="myEntitlementsTest"/>
         </methods>
       </class> <!-- tests.LeavePageTest -->
     </classes>

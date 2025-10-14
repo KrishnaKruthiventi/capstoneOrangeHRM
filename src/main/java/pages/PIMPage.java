@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import utilities.LoggerUtil;
-
 public class PIMPage extends BasePage{
 	
 	@FindBy(xpath = "//a[@href='/web/index.php/pim/viewPimModule']")
